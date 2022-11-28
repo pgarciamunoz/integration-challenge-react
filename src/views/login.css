@@ -1,0 +1,21 @@
+body {
+    background-image: url('../../public/floriane-vita-FyD3OWBuXnY-unsplash.jpg');
+}
+
+
+.form {
+    width: 30vw;
+    height: 40vh;
+    margin-left: 25em;
+}
+
+.form button{
+    background-color: blue;
+    padding: 20px 100px;
+    color: white;
+    letter-spacing: .2rem;
+    border: none
+}
+.form input {
+    margin: 5px 0;
+}

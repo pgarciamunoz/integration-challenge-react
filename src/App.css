@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.div-homeview {
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+.navLink {
+  color: lightblue;
+  text-decoration: none;
+  margin-right: 15px;
+}
+

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import {Route, Routes} from 'react-router-dom'
+import HomeView from './views/homeview';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import LoginView from './views/login';
+import MakePayment from './views/MakePayment'
+import NavBar from './components/NavBar';
 
 function App() {
+  console.log("hello")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <NavBar/>
+    <Routes>
+      <Route path="/homeview" element={<HomeView/>}/>
+      <Route path="/login" element={<LoginView/>}/>
+      <Route path="/payment" element={<MakePayment/>}/>
+    </Routes>
+    </>
   );
 }
 
