@@ -14,7 +14,7 @@ function App() {
     <NavBar/>
     <Routes>
       <Route path="/homeview" element={<HomeView/>}/>
-      <Route path="/login" element={<LoginView/>}/>
+      <Route path="/" element={<LoginView/>}/>
       <Route path="/payment" element={<MakePayment/>}/>
     </Routes>
     </>

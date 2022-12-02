@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router"
-import { post } from "../services/api"
+import { post, createUser } from "../services/api"
 import './login.css'
 
 
@@ -23,7 +23,7 @@ const LoginView = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const userResponse = await post({
+            const userResponse = await createUser({
                 customerId: "dummy",
                 action: "init",
                 customerSessionId: "jgh875wdwlv0skue63",
@@ -46,26 +46,29 @@ const LoginView = () => {
     }
 
     return (
-        <div className="container mt-5">
-            
-            <form className="form">
-                <input
-                    onChange={handleChange}
-                    name="email"
-                    value={user.email}
-                    className="form-control" type="text" placeholder="email" />
-                <input
-                    onChange={handleChange}
-                    name="password"
-                    value={user.password}
-                    className="form-control" type="password" placeholder="password" />
-                <button
-                    onClick={handleSubmit}
-                    className="form-control btn ">
-                    LOG IN
-                </button>
-            </form>
+        <div className="homepage">
+            <div className="container">
+
+                <form className="form">
+                    <input
+                        onChange={handleChange}
+                        name="email"
+                        value={user.email}
+                        className="form-control" type="text" placeholder="email" />
+                    <input
+                        onChange={handleChange}
+                        name="password"
+                        value={user.password}
+                        className="form-control" type="password" placeholder="password" />
+                    <button
+                        onClick={handleSubmit}
+                        className="form-control btn ">
+                        LOG IN
+                    </button>
+                </form>
+            </div>
         </div>
+
     )
 }
 

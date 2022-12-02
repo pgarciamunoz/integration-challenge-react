@@ -1,12 +1,17 @@
-body {
+.homepage {
     background-image: url('../../public/floriane-vita-FyD3OWBuXnY-unsplash.jpg');
+    height: 100vh;
+    margin: 0;
 }
-
 
 .form {
     width: 30vw;
     height: 40vh;
-    margin-left: 25em;
+    /* margin-left: 25em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
 .form button{
@@ -17,5 +22,10 @@ body {
     border: none
 }
 .form input {
-    margin: 5px 0;
+    padding: 10px 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
 }

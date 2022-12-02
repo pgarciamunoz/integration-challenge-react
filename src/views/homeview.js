@@ -37,7 +37,7 @@ function HomeView() {
                         <td>2</td>
                         <td>Clothing</td>
                         <td>11/13/2022</td>
-                        <td>$55.00t</td>
+                        <td>$55.00</td>
                     </tr>
                     <tr>
                         <td>3</td>
